@@ -5,9 +5,9 @@ def stock_info():
     buy_price_list = []
     stocks = []
     stocks_dict = {}
-    url = 'http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+GOOGL+MDT+YNDX+QIWI+BIIB+GILD+CBI+NKE+F+FISV&f=nl1kj'
+    url = 'http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+GOOGL+MDT+GILD+FISV+CWS&f=nl1kj'
     url_euro = 'http://finance.yahoo.com/d/quotes.csv?e=.csv&f=sl1&s=USDEUR=X'
-    stock_info = [['AAPL',17,98],['GOOG',3,162],['GOOGL',7,162],['MDT',65,23.19],['YNDX',90,13.98],['QIWI',65,19.70],['BIIB',4,276.47],['GILD',22,81.66],['CBI',60,34.29],['NKE',20,58.85],['F',175,9.43],['FISV',15,81.77]]
+    stock_info = [['AAPL',17,98],['GOOG',3,162],['GOOGL',7,162],['MDT',65,23.19],['GILD',22,81.66],['FISV',15,81.77],['CWS',50,26.01]]
     response = urllib2.urlopen(url)
     csvreader = csv.reader(response)
     stocksinternet=list(csvreader)

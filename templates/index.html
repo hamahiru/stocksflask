@@ -15,9 +15,12 @@
   <body>
     <div class="container">
       {% for stock in stocks%}
-        <p> {{stock[0]}}({{stock[1]}}): {{stock[9]}}, {{stock[4]}} Nik: {{stock[2]}} MAX: {{stock[5]}} Min: {{stock[6]}} </p>
+        <p> <a href="https://stocktwits.com/symbol/{{stock[0]}}">{{stock[0]}}</a>({{stock[1]}}):  <strong>{{stock[4]}}</strong> Nik: {{stock[2]}} MAX: {{stock[5]}} Min: {{stock[6]}}, {{stock[9]}} </p> 
       {% endfor %}
       <h1>profit: {{profit}}<h1>
+        <h4><a href="http://www.crossingwallstreet.com" target="_blank"/>CWS</a></h4>
+        <h4><a href="http://thereformedbroker.com" target="_blank">ReformedBroker</a></h4>
+        <h4><a href="http://investorfieldguide.com/" target="_blank">Patrick</a></h4>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
